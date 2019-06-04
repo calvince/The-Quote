@@ -24,9 +24,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Project live site
 
-  This is the live .[ Click for the demo]()
+  This is the live .[ Live site]()
 
-  ![Image]()
+  ![Image](https://scontent.fmba3-1.fna.fbcdn.net/v/t1.0-9/62223975_2292949850992805_1462030030317027328_n.jpg?_nc_cat=101&_nc_ht=scontent.fmba3-1.fna&oh=ba62064dbf124de172fe2187d6b301b7&oe=5D97D774)
 
 
 ## Behavior Driven Development
@@ -88,6 +88,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Support and contact details
 contact me @ calmosh1421@gmail.com
 ### License
-The project is under [MIT license]()
+The project is under [MIT license](https://github.com/calvince/The-Quote/blob/master/LICENSE)
 Copyright &copy; 2019.All rigths reserved
   
