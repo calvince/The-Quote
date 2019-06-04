@@ -24,7 +24,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Project live site
 
-  This is the live .[ Live site]()
+  This is the live .[ Live site](https://calvince.github.io/The-Quote/)
 
   ![Image](https://scontent.fmba3-1.fna.fbcdn.net/v/t1.0-9/62223975_2292949850992805_1462030030317027328_n.jpg?_nc_cat=101&_nc_ht=scontent.fmba3-1.fna&oh=ba62064dbf124de172fe2187d6b301b7&oe=5D97D774)
 
