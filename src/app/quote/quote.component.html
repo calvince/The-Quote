@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+  <div class =container>
+    <nav class="navbar navbar-light justify-content-between text-center">
+      <div class="text-center main-1"><h1>   {{ title }} App</h1></div>
+  </nav>
+  <app-quote-form (addQuote) = "addNewQuote($event)"></app-quote-form>
+  <div *ngFor = "let quote of quotes; let i = index">
+    <div id="con-1">
+      <div id="{{i}}" >
+          <p class="top">{{quote.description}}</p>
+          <p> By {{quote.publisher}}</p>
+          <p>created on {{quote.completeDate|date}}</p>
+      </div>
+     <br>
+     <div class="button">
+       <button class="btn btn-success" (click)="toggleDetails(i)"><i
+        class="	fa fa-plus-square"></i> </button>
+     </div>
+     <div *ngIf = "quote.showDescription">
+       <app-quote-details [quote] = "quote" (isComplete) = "deleteQuote($event, i)"></app-quote-details>
+     </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-copyright text-center py-3"> <h4>Copyright © 2019:</h4>
+     <p>Omosh Baba</p>
+    </div>
+</footer>
+</div>
+</body>
