@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Black+And+White+Picture|Yesteryear&display=swap");
+
+*{
+    font-family: 'Black And White Picture', sans-serif;
+}
+#form{
+    width: 100%;
+    
+    font-family: 'Black And White Picture', sans-serif;
+}
+
+
+#form input,#form textarea{
+    width: 50%;
+    
+}
+input{
+    left: 50%;
+}
+@media only screen and (max:width= 450px){
+    #form{
+        width: 100%;
+    }
+}
