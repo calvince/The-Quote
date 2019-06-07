@@ -1,19 +1,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <body>
   
-<p>Written By {{quote.name}}</p>
-  <a id="like" (click)="like()">
-      <span class="glyphicon glyphicon-thumbs-up"></span>
-    </a>
-{{upvote}}
+  <p>Published  By {{quote.publisher}}</p>
+  <p >Written By {{quote.name}}</p>
+  <p>created on {{quote.completeDate|date}}</p>
 
-<a id="unlike" (click)="unlike()">
-    <span class="glyphicon glyphicon-thumbs-down"></span>
-  </a>
-<br>
-
-<a id="delete" (click)="quoteDelete(true)">
-    <span class="glyphicon glyphicon-trash"></span>
-  </a>
 </body>
 

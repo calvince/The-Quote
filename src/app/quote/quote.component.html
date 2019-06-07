@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
@@ -8,10 +9,25 @@
   <app-quote-form (addQuote) = "addNewQuote($event)"></app-quote-form>
   <div *ngFor = "let quote of quotes; let i = index">
     <div id="con-1">
-      <div id="{{i}}" >
-          <p class="top">{{quote.description}}</p>
-          <p> By {{quote.publisher}}</p>
-          <p>created on {{quote.completeDate|date}}</p>
+      <div  id="{{i}}" >
+          <p  class="top">{{quote.description}}</p>  
+          <p>Posted  {{ quote.completeDate |dateCount }} days ago</p> 
+          <a id="like" (click)="like(i)">
+      <span class="glyphicon glyphicon-thumbs-up"></span>
+    </a>
+    {{quote.upvote}}
+
+<a id="unlike" (click)="unlike(i)">
+    <span class="glyphicon glyphicon-thumbs-down"></span>
+  </a>
+  {{quote.downvote}}
+<br>
+<div id="del">
+<a id="delete" (click)="deleteQuote(true)">
+    <span class="glyphicon glyphicon-trash"></span>
+  </a>
+</div>
+
       </div>
      <br>
      <div class="button">

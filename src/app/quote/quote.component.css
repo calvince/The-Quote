@@ -34,5 +34,13 @@ body{
         width: 100%;
     }
 }
+#like, #unlike, #delete{
+    padding: 5%;
+    color: white;
+}
+#del{
+    padding-top: 3%;
+    margin-left: 7%;
+}
 
 
